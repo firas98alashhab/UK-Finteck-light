@@ -24,6 +24,7 @@
 :root {
   --black: 0, 0, 0;
   --white: 255, 255, 255;
+  --gray: 120, 120, 120;
   --title-color: 245, 245, 245;
   --content-color: 175, 176, 182;
   --theme-color: #34489d;
@@ -467,7 +468,7 @@ nav.navbar {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  color: rgba(var(--white), 1);
+  color: rgba(var(--theme-color), 1);
   gap: 30px;
   position: relative;
   padding: 10px 0;
@@ -591,7 +592,7 @@ nav.navbar {
   font-family: "Play", sans-serif;
   font-size: calc(28px + 26 * (100vw - 320px) / 1600);
   line-height: 1.2;
-  color: rgba(var(--title-color), 1);
+  color: rgba(var(--theme-color-red), 1);
 }
 .home-section .home-sec .home-content p {
   color: rgba(var(--content-color), 1);
