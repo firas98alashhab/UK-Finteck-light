@@ -19,15 +19,15 @@
 /* 1.9 Custom cursor CSS */
 /* 1.10 Tap to top CSS */
 /*=====================
-   1.0 Typography Scss start
+1.0 Typography Scss start
 ==========================*/
 :root {
   --black: 0, 0, 0;
   --white: 255, 255, 255;
-  --gray: 120, 120, 120;
   --title-color: 245, 245, 245;
   --content-color: 175, 176, 182;
   --theme-color: #34489d;
+  --theme-color-red: 153,2,53;
   --dark-title: 13, 18, 31;
   --Iconsax-Color: #6e7179;
 }
@@ -125,14 +125,11 @@ ul {
           margin-inline-start: 0;
 }
 
-li {
-  list-style: none;
-  display: inline-block;
-}
 
-.btn-solid {
-  background-color: rgba(var(--theme-color), 1);
-  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+.btn-invest {
+  color: rgba(var(--black), 1);
+  background-color: rgba(var(--theme-color-red), 1);
+  font-size: calc(18px + 4 * (100vw - 320px) / 1600);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,27 +137,29 @@ li {
       -ms-flex-align: center;
           align-items: center;
   gap: calc(8px + 6 * (100vw - 320px) / 1600);
-  color: rgba(var(--dark-title), 1);
-  padding: calc(8px + 3 * (100vw - 320px) / 1600) calc(20px + 6 * (100vw - 320px) / 1600);
+  padding: calc(25px + 3 * (100vw - 320px) / 1600) calc(40px + 6 * (100vw - 320px) / 1600);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  border: 1px solid rgba(var(--theme-color), 1);
+  border: 1px solid rgba(var(--theme-color-red), 1);
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  margin: auto;
+  margin-top: 50px;
 }
-.btn-solid .iconsax svg [fill] {
+.btn-invest .iconsax svg [fill] {
   fill: rgba(var(--dark-title), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.btn-solid:hover {
+.btn-invest:hover {
   background-color: transparent;
   color: rgba(var(--white), 1);
+  border: 1px solid rgba(var(--white), 1);
 }
-.btn-solid:hover .iconsax svg [fill] {
+.btn-invest:hover .iconsax svg [fill] {
   fill: rgba(var(--white), 1);
 }
 
@@ -368,6 +367,11 @@ nav.navbar {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media (min-width: 1199px) {
+  .navbar-nav {
+    gap: 50px;
+  }
+}
 @media (max-width: 1199px) {
   .navbar-nav {
     position: relative;
@@ -383,6 +387,11 @@ nav.navbar {
   position: relative;
   padding-left: 18px !important;
   white-space: nowrap;
+}
+@media (min-width: 1199px) {
+  .navbar-nav .nav-link {
+    font-size: 22px !important;
+  }
 }
 .navbar-nav .nav-link:before {
   content: "";
@@ -468,7 +477,7 @@ nav.navbar {
       -ms-flex-align: center;
           align-items: center;
   font-size: 20px;
-  color: rgba(var(--theme-color), 1);
+  color: rgba(var(--white), 1);
   gap: 30px;
   position: relative;
   padding: 10px 0;
@@ -557,6 +566,40 @@ nav.navbar {
   .home-section .home-sec .home-content {
     width: 76%;
   }
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #0e61c2;
+    z-index: 10000;
+    border-radius: 50%;
+    left: 24%;
+    top: 55%;
+  }
+  .hr {
+    left: -8.6%;
+    top: 4.5%;
+  }
+  .mn {
+    left: -8.6%;
+    top: 3.4%;
+  }
+  .sc {
+    left: -8.1%;
+    top: 3.5%;
+  }
+  .hr::before {
+    max-height: 12px;
+  }
+  
+  .mn::before {
+    max-height: 14px;
+  }
+  
+  .sc::before {
+    max-height: 18px;
+  }
 }
 @media (max-width: 991px) {
   .home-section .home-sec .home-content {
@@ -592,14 +635,14 @@ nav.navbar {
   font-family: "Play", sans-serif;
   font-size: calc(28px + 26 * (100vw - 320px) / 1600);
   line-height: 1.2;
-  color: rgba(var(--theme-color-red), 1);
+  color: rgba(var(--title-color), 1);
 }
 .home-section .home-sec .home-content p {
   color: rgba(var(--content-color), 1);
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   margin-bottom: 0;
 }
-.home-section .home-sec .home-content .btn-solid {
+.home-section .home-sec .home-content .btn-invest {
   margin-top: calc(35px + 20 * (100vw - 320px) / 1600);
 }
 .home-section .home-sec .home-img {
@@ -624,9 +667,96 @@ nav.navbar {
   z-index: 1;
 }
 .home-section .home-img .robot-img {
+  position: relative;
   width: 92%;
-  border-bottom: 3px solid rgb(var(--theme-color));
+  z-index: -1;
 }
+/* clock css */
+
+.clock {
+  position: absolute;
+  top: 46.5%;
+  left: 40.95%;
+  border-radius: 50%;
+  width: 73px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/images/clock.png);
+  background-size: cover;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #0e61c2;
+  z-index: 10000;
+  border-radius: 50%;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+
+.clock .hour, .hr {
+  width: 150px;
+  height: 150px;
+}
+
+.clock .min, .mn {
+  width: 170px;
+  height: 170px;
+}
+
+.clock .sec, .sc {
+  width: 200px;
+  height: 200px;
+}
+
+.hr, .mn, .sc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hr::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background: #990235;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.mn::before {
+  content: '';
+  position: absolute;
+  width: 1.85px;
+  height: 20px;
+  background: #000;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.sc::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background: #000;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
 @media (max-width: 1700px) {
   .home-section .home-img .robot-img {
     width: 83%;
@@ -656,7 +786,7 @@ nav.navbar {
   border-radius: 100%;
   position: absolute;
   z-index: -1;
-  background-color: #0b0f1a;
+  background-color: transparent;
 }
 @media (max-width: 1700px) {
   .home-section .home-img .round-effect {
@@ -1026,7 +1156,7 @@ footer .footer-content h2 {
   color: rgba(var(--white), 1);
   margin: 14px auto 18px;
 }
-footer .footer-content .btn-solid {
+footer .footer-content .btn-invest {
   margin: 0 auto;
 }
 

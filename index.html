@@ -53,7 +53,7 @@
             </span>
         </button>
         <a href="index.html">
-            <img src="assets/images/fintech-logo.png" width="120px" class="img-fluid" alt="logo">
+            <img src="assets/images/fintech-logo.png" width="120px" class="img-fluid logo-img" alt="logo">
         </a>
         <nav class="header-nav-middle">
             <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
@@ -65,18 +65,18 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <li class="nav-item hidden">
                                 <a class="nav-link" href="#about">Home</a>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item hidden">
                                 <a class="nav-link" href="#services"> Services</a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item hidden">
                                 <a class="nav-link" href="#marketing">Digital marketing</a>
                             </li>
 
-                            <li class="nav-item dropdown">
+                            <li class="nav-item dropdown hidden">
                                 <a class="nav-link dropdown-toggle" href="javascript:void(0)"
                                     data-bs-toggle="dropdown">Investment Opportunities  </a>
 
@@ -89,11 +89,11 @@
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="html/invest.html">Invest with Us </a>
-                                    </li>     
+                                    </li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item hidden">
                                 <a class="nav-link" href="#contact-us">Contact Us</a>
                             </li>
                         </ul>
@@ -109,36 +109,51 @@
     <section id="home" class="section-b-space home-section">
         <div class="container-fluid">
             <div class="home-sec">
-                <div class="home-content">
+                <div class="home-content home-content-home">
                     <div>
-                        <h2>UK </h2><h2> Fintech</h2>
-                        <h1>Fintech Empowers Boundaries</h1>
-                        <p>“We design what the business need, end to end services”
+                        <h1 class="hidden">Fintech Empowers Boundaries</h1>
+                        <p class="hidden">“We design what the business need, end to end services”
                         </p>
-                        <a href="html/invest.html" class="btn-solid">Invest with Us <i class="iconsax"
+                        <a href="html/invest.html" class="btn-invest hidden">Invest with us <i class="iconsax"
                                 data-icon="arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="home-img d-lg-flex d-none">
-                    <img src="assets/images/landing/robot1.png" class="img-fluid robot-img" alt="robot" style="margin-top: 40px;">
-                    <div class="round-effect">
-                        <img src="assets/images/landing/round2.gif" class="img-fluid " alt="robot">
+                    <div>
+                        <img src="assets/images/landing/logo-fintech2.png" class="img-fluid robot-img hidden" alt="robot" style="margin-top: 40px;">
+                        <div class="clock hidden">
+                            <div class="hour">
+                                <div class="hr" id="hr"></div>
+                            </div>
+                            <div class="min">
+                                <div class="mn" id="mn"></div>
+                            </div>
+                            <div class="sec">
+                                <div class="sc" id="sc"></div>
+                            </div>
+                        </div>
                     </div>
                     <ul class="home-effect">
-                        <li><img src="assets/images/landing/effect1.png" class="img-fluid effect-img" alt=""><img
-                                src="assets/svg/service/search.svg" class="img-fluid outline-icon" alt=""> SEO
-                            Specialist
+                        <li class="firas"><a href="#services" style="color: white;">
+                            <img src="assets/images/landing/effect2.png" class="img-fluid effect-img" alt=""><img
+                                src="assets/images/home/services.png" class="img-fluid outline-icon" alt="Services" style="width: 50px; margin-top: -8px; margin-left: 3px; margin-right: 13px;">  Services
+                            </a>
                         </li>
-                        <li><img src="assets/images/landing/effect1.png" class="img-fluid effect-img" alt=""><img
-                                src="assets/svg/service/graph.svg" class="img-fluid outline-icon" alt=""> Digital
-                            marketers
+                        <li class="firas"><a href="#marketing" style="color: white;">
+                            <img src="assets/images/landing/effect2.png" class="img-fluid effect-img" alt=""><img
+                                src="assets/images/home/digital-marketing.png" class="img-fluid outline-icon" alt="Digital Marketing" style="width: 50px; margin-left: 4px; margin-right: 13px;"> Digital
+                            Marketing
+                            </a>
                         </li>
-                        <li><img src="assets/images/landing/effect1.png" class="img-fluid effect-img" alt=""><img
-                                src="assets/svg/service/copy.svg" class="img-fluid outline-icon" alt=""> Copy writer
+                        <li class="firas"><a href="#virtual-mall" style="color: white;">
+                            <img src="assets/images/landing/effect2.png" class="img-fluid effect-img" alt=""><img
+                                src="assets/images/home/mall.png" class="img-fluid outline-icon" alt="Virtual Mall" style="width: 50px; margin-bottom: 3px; margin-left: 2px; margin-right: 13px;"> Virtual Mall
+                            </a>
                         </li>
-                        <li><img src="assets/images/landing/effect1.png" class="img-fluid effect-img" alt=""><img
-                                src="assets/svg/service/text.svg" class="img-fluid outline-icon" alt=""> Content
-                            writer
+                        <li class="firas"><a href="#contact-us" style="color: white;">
+                            <img src="assets/images/landing/effect2.png" class="img-fluid effect-img" alt=""><img
+                                src="assets/images/home/contact-us.png" class="img-fluid outline-icon" alt="Contact us" style="width: 50px; margin-bottom: 1px; margin-left: 2px; margin-right: 13px;"> Contect us
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -155,13 +170,12 @@
                 <div class="home-content" style="margin-top: 150px;">
                     <div class="bg-effect">
                         <img src="assets/images/home/home-bg.gif" class="img-fluid bg-gif" alt="">
-                        <img src="assets/svg/home/1.png" class="img-fluid effect1 rotate-effect" alt="">
                     </div>
                     <div>
-                        <h1>About <div class="title-effect">
-                                <img src="assets/images/title-effect3.png" alt=""><span>UK Fintech </span>
+                        <h1 class="hidden">About <div class="title-effect">
+                                <img src="assets/images/title-effect2.png" alt=""><span>UK Fintech </span>
                             </div></h1>
-                        <p style="margin-top: 100px; margin-bottom: 150px; color: rgba(153, 2, 52, 0.726)">
+                        <p class="hidden" style="margin-top: 100px; margin-bottom: 150px;">
                             Looking forward, as we observe the inevitable shift towards a cashless economy and witness
                             the transformation of businesses into a realm of limitless possibilities, unrestricted by
                             geographical boundaries or trading regulations, it becomes evident that the emerging fintech
@@ -174,7 +188,7 @@
                     <div class="service-section section-b-space pt-2">
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 hidden">
                                     <div class="row g-4 service-row">                        
                                         <div class="col-sm-12">
                                             <div class="service-box">
@@ -186,11 +200,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12" style="margin-top: 5px;">
+                                <div class="col-lg-12 hidden" style="margin-top: 5px;">
                                     <div class="row g-4 service-row">                        
                                         <div class="col-sm-12">
                                             <div class="service-box">
-                                                <div class="service-content">
+                                                <div class="service-content ">
                                                     <p>At our company, we take pride in providing comprehensive end-to-end services that are tailored to meet the unique needs of businesses. Our approach revolves around understanding the specific requirements of each client and designing solutions that align perfectly with their goals.</p>
                                                 </div>
                                             </div>
@@ -198,7 +212,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12" style="margin-top: 5px;">
+                                <div class="col-lg-12 hidden" style="margin-top: 5px;">
                                     <div class="row g-4 service-row">                        
                                         <div class="col-sm-12">
                                             <div class="service-box">
@@ -210,7 +224,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12" style="margin-top: 5px;">
+                                <div class="col-lg-12 hidden" style="margin-top: 5px;">
                                     <div class="row g-4 service-row">                        
                                         <div class="col-sm-12">
                                             <div class="service-box">
@@ -222,7 +236,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12" style="margin-top: 5px;">
+                                <div class="col-lg-12 hidden" style="margin-top: 5px;">
                                     <div class="row g-4 service-row">                        
                                         <div class="col-sm-12">
                                             <div class="service-box">
@@ -234,7 +248,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-12 last-about" style="margin-top: 5px; margin-bottom: -80px;">
+                                <div class="col-lg-12 last-about hidden" style="margin-top: 5px; margin-bottom: -80px;">
                                     <div class="row g-4 service-row">                        
                                         <div class="col-sm-12">
                                             <div class="service-box">
@@ -245,7 +259,6 @@
                                         </div>
                                     </div>
                                 </div>
-                         
                             </div>
                         </div>
                     </div>
@@ -260,14 +273,14 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="breadcrumb-content">
-                        <div>
+                        <div class="firas">
                             <h2><img src="assets/images/breadcrumb-title1.png" class="img-fluid"
                                     alt="title-effect">Our Services
                             </h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-lg-inline-block d-none">
+                <div class="col-lg-6 d-lg-inline-block d-none firas-invert">
                     <div class="breadcrumb-img">
                         <img src="assets/svg/service-vector1.svg" class="img-fluid" alt="service">
                     </div>
@@ -283,7 +296,7 @@
         <div class="container pb-md-5 pb-0">
             <div class="row g-xxl-5 g-4">
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -299,7 +312,7 @@
                 </div>
 
         
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -316,7 +329,7 @@
                 </div>
 
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -333,7 +346,7 @@
                 </div>
 
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -350,7 +363,7 @@
                 </div>
 
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -367,7 +380,7 @@
                 </div>
 
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -381,7 +394,7 @@
                 </div>
 
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -398,7 +411,7 @@
                 </div>
 
 
-                <div class="col-xl-4 col-lg-4 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-sm-6 firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -416,7 +429,7 @@
 
 
                 
-                <div class="col-xl-4 col-lg-4 col-sm-6 last-box">
+                <div class="col-xl-4 col-lg-4 col-sm-6 last-box firas">
                     <div class="feature-box">
                         <div class="feature-top">
                             <div class="feature-icon">
@@ -451,17 +464,17 @@
                 <div class="col-lg-8">
                     <div class="about-content">
                         <div>
-                            <div class="title">
+                            <div class="title firas">
                                 <h2>Consultancy Services </h2>
                             </div>
-                            <p>We are introducing an array of consultancy services, that are touching base with the modern needs of every organization wither it is a well-established organization or SMEs or even an a start up entrepreneurial project:  </p>
+                            <p class="firas-invert">We are introducing an array of consultancy services, that are touching base with the modern needs of every organization wither it is a well-established organization or SMEs or even an a start up entrepreneurial project:  </p>
                             
                             <ul>
-                            <li><h4><span style="color:#0467cc">1.Digital transformation consulting :</span> This involves helping businesses adopt new technologies and digital processes to improve their operations and stay competitive</h4></li>
-                            <li><h4><span style="color:#0467cc">2.Customer experience consulting :</span>This involves helping businesses understand and improve the experiences of their customers, from the initial engagement to post-purchase support. </h4></li>
-                            <li><h4><span style="color:#0467cc">3.Organization Development & Human resources consulting :</span>This involves helping businesses with a variety of HR-related tasks, such as recruiting and hiring, employee engagement, and performance management. </h4></li>
-                            <li><h4><span style="color:#0467cc">4.Strategic planning consulting :</span>This involves helping businesses develop long-term plans and goals, and identify the resources and steps needed to achieve them. </h4></li>
-                            <li><h4><span style="color:#0467cc">5.Marketing and branding consulting :</span>This involves helping businesses develop and implement marketing and branding strategies to reach and engage their target audiences.  </h4></li>
+                            <li class="firas"><h4><span style="color:#0467cc">1.Digital transformation consulting :</span> This involves helping businesses adopt new technologies and digital processes to improve their operations and stay competitive</h4></li>
+                            <li class="firas-invert"><h4><span style="color:#0467cc">2.Customer experience consulting :</span>This involves helping businesses understand and improve the experiences of their customers, from the initial engagement to post-purchase support. </h4></li>
+                            <li class="firas"><h4><span style="color:#0467cc">3.Organization Development & Human resources consulting :</span>This involves helping businesses with a variety of HR-related tasks, such as recruiting and hiring, employee engagement, and performance management. </h4></li>
+                            <li class="firas-invert"><h4><span style="color:#0467cc">4.Strategic planning consulting :</span>This involves helping businesses develop long-term plans and goals, and identify the resources and steps needed to achieve them. </h4></li>
+                            <li class="firas"><h4><span style="color:#0467cc">5.Marketing and branding consulting :</span>This involves helping businesses develop and implement marketing and branding strategies to reach and engage their target audiences.  </h4></li>
 
                             </ul>
                         </div>
@@ -478,14 +491,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="home-content">
-                        <div class="bg-effect">
-                            <img src="assets/svg/home/1.png" class="img-fluid effect1 rotate-effect" alt="">
-                        </div>
                         <div>
-                            <h1>Digital   <div class="title-effect">
+                            <h1 class="hidden">Digital   <div class="title-effect">
                                     <img src="assets/images/title-effect2.png" alt=""><span>Marketing</span>
                                 </div></h1>
-                            <p>
+                            <p class="hidden">
                                 We plan and execute innovative digital campaigns that grant reach to the targeted customers within a minimal time framework. 
                             </p>
                 
@@ -503,9 +513,9 @@
     <section class="ratio2_1">
         <div class="container">
             <div class="row g-5">
-                <p class="text-center mb-3" style="color:#0467cc">Our services encompass a wide array of digital marketing strategies, including:</p>
+                <p class="text-center mb-3 hidden" style="color:#0467cc">Our services encompass a wide array of digital marketing strategies, including:</p>
 
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/SEO.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -516,7 +526,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/PPC.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -527,7 +537,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/SMM.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -538,7 +548,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/content-marketing.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -549,7 +559,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/email-marketing.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -560,7 +570,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/CRO.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -571,7 +581,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/Influencer-Marketing.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -582,7 +592,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/ORM.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -594,7 +604,7 @@
                     </div>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 shareef">
                     <div class="blog-listing">
                         <div class="blog-img bg-size">
                             <img src="assets/images/blog/analytics-and-reporting.jpg" class="img-fluid bg-img" alt="blog" style="display: none;">
@@ -610,7 +620,7 @@
     </section>
 
 
-    <section class="info-section section-b-space">
+    <section class="info-section section-b-space hidden">
         <div class="container">
             <div class="info-box aos-init aos-animate" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="hand-effect d-md-block d-none">
@@ -629,8 +639,16 @@
 
     <!-- about virtual mall start -->
 
-    <section class="virtual-mall" id="virtual-mall" style="padding-top: 80px;">
+    <section class="virtual-mall hidden" id="virtual-mall" style="padding-top: 80px;">
         <div class="virtual-mall-video">
+            <video class="theVideo" loop preload="none">
+                <source src="assets/video/low-sized.m4v" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="virtual-mall-mobile-screen" style="padding-top: 80px;">
+        <div class="virtual-mall-video-mobile-screen">
             <video width="86%" controls loop muted autoplay="autoplay">
                 <source src="assets/video/low sized.m4v" type="video/mp4">
             </video>
@@ -638,18 +656,17 @@
     </section>
 
 
-
-    <section class="about-section section-b-space virtual-mall-bg">
+    <section class="about-section section-b-space virtual-mall-bg shareef">
     <div class="bg-effect aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500"></div>
     <div class="container">
         <div class="row g-md-5 g-4">
             <div class="col-lg-12 order-lg-0 order-1" style="margin-left: -40px;">
                 <div class="about-content">
                     <div>
-                        <div class="title">
+                        <div class="title hidden">
                             <h2 class="text-white">About The Virtual Mall </h2>
                         </div>
-                        <p>Welcome to the future of shopping - the Luxury Virtual Mall, a cutting-edge commercial concept that redefines the luxury retail experience for discerning shoppers worldwide. Our virtual mall is a fusion of innovative technology, opulent aesthetics, and unrivaled convenience, offering an unparalleled shopping journey right from the comfort of your home.</p>
+                        <p class="hidden">Welcome to the future of shopping - the Luxury Virtual Mall, a cutting-edge commercial concept that redefines the luxury retail experience for discerning shoppers worldwide. Our virtual mall is a fusion of innovative technology, opulent aesthetics, and unrivaled convenience, offering an unparalleled shopping journey right from the comfort of your home.</p>
                 
                     </div>
                 </div>
@@ -669,11 +686,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="home-content">
-                        <div class="bg-effect">
-                            <img src="assets/svg/home/1.png" class="img-fluid effect1 rotate-effect" alt="">
-                        </div>
                         <div style="margin-bottom: 150px;">
-                            <h1>Key    <div class="title-effect">
+                            <h1 class="hidden">Key    <div class="title-effect">
                                     <img src="assets/images/title-effect2.png" alt=""><span>Features</span>
                                 </div></h1>
                 
@@ -692,7 +706,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row g-4 service-row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Immersive Virtual Environment : </h3>
@@ -700,7 +714,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas-invert">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Interactive Shopping Experience : </h3>
@@ -708,7 +722,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Virtual Try-On and Fitting Rooms: </h3>
@@ -717,7 +731,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas-invert">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Global Luxury Boutiques : </h3>
@@ -725,7 +739,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Seamless Transactions and Secure Payments: </h3>
@@ -733,7 +747,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas-invert">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Exclusive Events and Launches: </h3>
@@ -741,7 +755,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">Personalized Rewards and Loyalty Programs: </h3>
@@ -749,7 +763,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 firas-invert">
                             <div class="service-box">
                                 <div class="service-content">
                                     <h3><img src="assets/svg/service-title.svg" alt="effect" class="img-fluid">24/7 Customer Support: </h3>
@@ -760,7 +774,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="col-sm-12 shareef" style="margin-bottom: auto;">
                             <div class="service-box">
                                 <div class="service-content">
                                     <p>Embrace the future of luxury shopping with our revolutionary Luxury Virtual Mall. Elevate your shopping experience, indulge in premium products, and redefine the way you engage with luxury brands. Join us on this extraordinary virtual journey where luxury, innovation, and convenience converge to cater to your discerning tastes.</p>
@@ -783,15 +797,15 @@
                 <div class="col-lg-6">
                     <div class="breadcrumb-content">
                         <div>
-                            <h2><img src="assets/images/breadcrumb-title1.png" class="img-fluid"
+                            <h2 class="contact-uss firas"><img src="assets/images/breadcrumb-title1.png" class="img-fluid"
                                     alt="title-effect">Contact us
                             </h2>
-                            <p></i>Email us with any questions, we would be happy to answer
+                            <p class="firas">Email us with any questions, we would be happy to answer
                                 your question. </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-lg-inline-block d-none">
+                <div class="col-lg-6 d-lg-inline-block d-none firas-invert">
                     <div class="breadcrumb-img">
                         <img src="assets/svg/contact-vector1.svg" class="img-fluid" alt="service">
                     </div>
@@ -806,36 +820,33 @@
     <section class="contact-section pb-md-5 pb-0">
         <div class="container">
             <ul class="contact-box">
-                <li>
+                <li class="shareef">
                     <div class="contact-icon">
                         <img src="assets/svg/contact/message1.svg" class="img-fluid" alt="message">
                     </div>
                     <h3>Mail id</h3>
                     <h4>Info@ukfintech.uk</h4>
                 </li>
-                <li>
+                <li class="shareef">
                     <div class="contact-icon">
                         <img src="assets/svg/contact/contact1.svg" class="img-fluid" alt="message">
                     </div>
                     <h3>Contact no.</h3>
-                    <h4>(406) 555-0120</h4>
-                    <h4>(684) 555-0102</h4>
+                    <h4>+44 (0) 207 689 7888</h4>
                 </li>
-                <li>
+                <li class="shareef">
                     <div class="contact-icon">
                         <img src="assets/svg/contact/route1.svg" class="img-fluid" alt="message">
                     </div>
                     <h3>Address 1</h3>
-                    <h4>UK.</h4>
-                    <h4>London</h4>
+                    <h4>128 City Road, London EC1V 2NX</h4>
                 </li>
-                <li>
+                <li class="shareef">
                     <div class="contact-icon">
                         <img src="assets/svg/contact/address1.svg" class="img-fluid" alt="message">
                     </div>
-                    <h3>Address 2</h3>
-                    <h4>2972 Westheimer Rd. Santa </h4>
-                    <h4>Ana, Illinois 85486 </h4>
+                    <h3>Web</h3>
+                    <a href="https://www.yourcompanyformations.co.uk/"><h4>yourcompanyformations.co.uk</h4></a>
                 </li>
             </ul>
             <div class="contact-details">
@@ -843,32 +854,33 @@
                     <div class="col-xl-7 col-lg-6">
                         <form class="auth-form">
                             <div class="row g-4">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 firas">
                                     <label for="name" class="form-label" style="justify-content: start;">Name</label>
                                     <input type="email" class="form-control" id="name">
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 firas-invert">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email">
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 hidden">
                                     <label for="phoneNumber" class="form-label">Phone number</label>
                                     <input type="email" class="form-control" id="phoneNumber">
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 hidden">
                                     <label for="message" class="form-label">Additional Message</label>
                                     <textarea class="form-control" id="message" rows="3"></textarea>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 hidden">
                                     <a href="" data-cursor="pointer" class="btn-solid">Send message</a>
                                 </div>
                             </div>
                         </form>
                     </div>
-                    <div class="col-xl-5 col-lg-6">
+                    <div class="col-xl-5 col-lg-6 shareef">
                         <div class="map-sec" style="right: 50%;">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79567.57700797812!2d-112.12049328183899!3d33.42503734906143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1683867729748!5m2!1sen!2sin"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79567.57700797812!2d-112.12049328183899!3d33.42503734906143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C%20AZ%2C%20USA!5e0!3m2!1sen!2sin!4v1683867729748!5m2!1sen!2sin">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -930,6 +942,17 @@
         window.addEventListener('load', AOS.refresh);
     </script>
 
+    <!-- video script -->
+
+    <script src="assets/js/video.js"></script>
+
+    <!-- scroll animation script -->
+
+    <script src="assets/js/animation-scroll.js"></script>
+
+    <!-- clock logic script -->
+
+    <script src="assets/js/clock.js"></script>
 </body>
 
 </html>
