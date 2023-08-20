@@ -164,7 +164,8 @@ html {
 body {
   position: relative;
   font-family: "Outfit", sans-serif;
-  background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
+  /* background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%); */
+  background: linear-gradient(0deg, #fff, #fff), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
 }
 body:after {
   content: "";
@@ -228,7 +229,7 @@ a:not([href]):not([class]):hover {
 
 a {
   text-decoration: none;
-  color: rgba(var(--theme-color), 1);
+  color: rgba(var(--theme-color-red), 1);
 }
 a:hover {
   color: rgba(var(--theme-color), 1);
@@ -277,7 +278,7 @@ li {
     2.2 Breadcrumb Scss start
 ==========================*/
 .breadcrumb-section {
-  background-image: url("../images/breadcrumb-bg.png");
+  background-image: url("../images/info-bg1.jpg");
   background-position: bottom;
   background-size: cover;
   padding-top: 180px;
@@ -2404,7 +2405,7 @@ header .navbar-light .navbar-brand:focus {
   color: rgba(var(--title-color), 1);
 }
 header .navbar-light .navbar-nav .nav-link {
-  color: rgba(var(--white), 1);
+  color: rgba(var(--black), 1);
 }
 header .navbar-light .navbar-nav .nav-link:hover {
   color: rgba(var(--theme-color), 1);
@@ -5024,7 +5025,7 @@ header .offcanvas-backdrop {
   }
 }
 .home-section .home-content h1 {
-  color: rgba(var(--title-color), 1);
+  color: rgba(var(--theme-color), 1);
 }
 @media (max-width: 991px) {
   .home-section .home-content h1 {
@@ -5038,7 +5039,7 @@ header .offcanvas-backdrop {
 }
 .home-section .home-content h1 .title-effect {
   padding: 3px 20px;
-  background-color: #34479d36;
+  background-color: #34489d;
   display: inline-block;
   position: relative;
   margin: 0 15px;
@@ -5068,7 +5069,7 @@ header .offcanvas-backdrop {
   }
 }
 .home-section .home-content h1 .title-effect span {
-  background: url("../images/title-bg1.jpg");
+  background: url("../images/title-bg3.jpg");
   background-position: bottom;
   -webkit-background-clip: text;
   color: transparent;
@@ -5360,9 +5361,11 @@ header .offcanvas-backdrop {
   }
 }
 
+
+
 .service-section {
   padding-top: 178px;
-  background: linear-gradient(180.02deg, rgba(var(--theme-color), 0.05) 0.02%, rgba(var(--theme-color), 0) 90.86%);
+  background: linear-gradient(180.02deg, rgba(var(--theme-color-red), 0.5) 0.02%, rgba(var(--theme-color-red), 0) 90.86%);
   position: relative;
   overflow: hidden;
 }
@@ -5385,7 +5388,7 @@ header .offcanvas-backdrop {
 }
 .service-section .service-box {
   padding: 40px;
-  background: #0a0e17;
+  background: #1c2753;
   position: relative;
   border-radius: 4px;
   height: 100%;
@@ -5425,7 +5428,7 @@ header .offcanvas-backdrop {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(148deg, rgba(var(--theme-color), 0.15) -15.73%, rgba(var(--theme-color), 0) 98.72%);
+  background: linear-gradient(148deg, rgba(var(--theme-color), 0.35) -15.73%, rgba(var(--theme-color), 0) 98.72%);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
@@ -5486,6 +5489,7 @@ header .offcanvas-backdrop {
   gap: 10px;
 }
 .service-section .service-box .service-content p {
+  color: rgba(var(--white), 1);
   margin-bottom: 0;
 }
 .service-section .service-box:hover:after {
@@ -5760,7 +5764,7 @@ header .offcanvas-backdrop {
   z-index: -1;
 }
 .feature-section .feature-box {
-  background-color: #0a0e17;
+  background: #1c2753;
   padding: 34px;
   border-radius: 4px;
   position: relative;

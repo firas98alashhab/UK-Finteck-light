@@ -125,18 +125,17 @@ ul {
           margin-inline-start: 0;
 }
 
-
-.btn-invest {
-  color: rgba(var(--black), 1);
+#btn-invest {
   background-color: rgba(var(--theme-color-red), 1);
   font-size: calc(18px + 4 * (100vw - 320px) / 1600);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: calc(8px + 6 * (100vw - 320px) / 1600);
+  color: rgba(var(--black), 1);
   padding: calc(25px + 3 * (100vw - 320px) / 1600) calc(40px + 6 * (100vw - 320px) / 1600);
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -144,23 +143,23 @@ ul {
   border: 1px solid rgba(var(--theme-color-red), 1);
   border-radius: 8px;
   font-weight: 600;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   margin: auto;
   margin-top: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.btn-invest .iconsax svg [fill] {
+#btn-invest .iconsax svg [fill] {
   fill: rgba(var(--dark-title), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.btn-invest:hover {
+#btn-invest:hover {
   background-color: transparent;
-  color: rgba(var(--white), 1);
-  border: 1px solid rgba(var(--white), 1);
+  color: rgba(var(--theme-color-red), 1);
+  border: 1px solid rgba(var(--theme-color-red), 1);
 }
-.btn-invest:hover .iconsax svg [fill] {
-  fill: rgba(var(--white), 1);
+#btn-invest:hover .iconsax svg [fill] {
+  fill: rgba(var(--theme-color-red), 1);
 }
 
 /*=====================
@@ -483,6 +482,7 @@ nav.navbar {
   padding: 10px 0;
   position: absolute;
 }
+
 @media (max-width: 1700px) {
   .home-section .home-sec .home-effect li {
     font-size: 18px;
@@ -635,7 +635,7 @@ nav.navbar {
   font-family: "Play", sans-serif;
   font-size: calc(28px + 26 * (100vw - 320px) / 1600);
   line-height: 1.2;
-  color: rgba(var(--title-color), 1);
+  color: rgba(var(--theme-color-red), 1);
 }
 .home-section .home-sec .home-content p {
   color: rgba(var(--content-color), 1);
@@ -683,7 +683,7 @@ nav.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/assets/images/clock.png);
+  background: url(../images/clock.png);
   background-size: cover;
 }
 
