@@ -368,7 +368,7 @@ nav.navbar {
 }
 @media (min-width: 1199px) {
   .navbar-nav {
-    gap: 50px;
+    gap: 30px;
   }
 }
 @media (max-width: 1199px) {
@@ -390,6 +390,14 @@ nav.navbar {
 @media (min-width: 1199px) {
   .navbar-nav .nav-link {
     font-size: 22px !important;
+  }
+}
+@media (max-width: 1500px) {
+  .navbar-nav .nav-link {
+    font-size: 20px !important;
+  }
+  .navbar-nav {
+    gap: 8px;
   }
 }
 .navbar-nav .nav-link:before {
@@ -562,6 +570,58 @@ nav.navbar {
     width: 50%;
   }
 }
+@media (max-width: 1291px) {
+  .home-section .home-sec .home-content {
+    width: 76%;
+  }
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 4px !important;
+    height: 4px !important;
+    background: #0e61c2;
+    z-index: 10000;
+    border-radius: 50%;
+    left: 45.8%;
+    top: 47.2%;
+  }
+  .clock {
+    position: absolute;
+    top: 50.8% !important;
+    left: 41.1% !important;
+    border-radius: 50%;
+    width: 45px !important;
+    height: 45px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/clock.png);
+    background-size: cover;
+  }
+  .hr {
+    left: -1.6%;
+    top: 2%;
+  }
+  .mn {
+    top: 0%;
+    left: -1.8%;
+  }
+  .sc {
+    left: -.2%;
+    top: 0.3%;
+  }
+  .hr::before {
+    max-height: 12px;
+  }
+  
+  .mn::before {
+    max-height: 14px;
+  }
+  
+  .sc::before {
+    max-height: 18px;
+  }
+}
 @media (max-width: 1199px) {
   .home-section .home-sec .home-content {
     width: 76%;
@@ -569,25 +629,136 @@ nav.navbar {
   .clock::before {
     content: '';
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 4px !important;
+    height: 4px !important;
     background: #0e61c2;
     z-index: 10000;
     border-radius: 50%;
-    left: 24%;
-    top: 55%;
+    left: 45.8%;
+    top: 47.2%;
+  }
+  .clock {
+    position: absolute;
+    top: 50.8% !important;
+    left: 40.8% !important;
+    border-radius: 50%;
+    width: 45px !important;
+    height: 45px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/clock.png);
+    background-size: cover;
   }
   .hr {
-    left: -8.6%;
-    top: 4.5%;
+    left: -1.6%;
+    top: 2%;
   }
   .mn {
-    left: -8.6%;
-    top: 3.4%;
+    top: 0%;
+    left: -1.8%;
   }
   .sc {
-    left: -8.1%;
-    top: 3.5%;
+    left: -.2%;
+    top: 0.3%;
+  }
+  .hr::before {
+    max-height: 12px;
+  }
+  
+  .mn::before {
+    max-height: 14px;
+  }
+  
+  .sc::before {
+    max-height: 18px;
+  }
+}
+@media (max-width: 1100px) {
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 4px !important;
+    height: 4px !important;
+    background: #0e61c2;
+    z-index: 10000;
+    border-radius: 50%;
+    left: 45.8%;
+    top: 47.2%;
+  }
+  .clock {
+    position: absolute;
+    top: 51% !important;
+    left: 40.8% !important;
+    border-radius: 50%;
+    width: 43px !important;
+    height: 43px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/clock.png);
+    background-size: cover;
+  }
+  .hr {
+    left: -1%;
+    top: 2%;
+  }
+  .mn {
+    top: 0%;
+    left: -1%;
+  }
+  .sc {
+    left: -.2%;
+    top: .2%;
+  }
+  .hr::before {
+    max-height: 12px;
+  }
+  
+  .mn::before {
+    max-height: 14px;
+  }
+  
+  .sc::before {
+    max-height: 18px;
+  }
+}
+@media (max-width: 1050px) {
+  .clock::before {
+    content: '';
+    position: absolute;
+    width: 4px !important;
+    height: 4px !important;
+    background: #0e61c2;
+    z-index: 10000;
+    border-radius: 50%;
+    left: 45.8%;
+    top: 47.2%;
+  }
+  .clock {
+    position: absolute;
+    top: 51.5% !important;
+    left: 40.8% !important;
+    border-radius: 50%;
+    width: 42px !important;
+    height: 42px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/clock.png);
+    background-size: cover;
+  }
+  .hr {
+    left: -1%;
+    top: 2%;
+  }
+  .mn {
+    top: 0%;
+    left: -0.8%;
+  }
+  .sc {
+    left: -.2%;
+    top: 0.5%;
   }
   .hr::before {
     max-height: 12px;
@@ -1028,6 +1199,19 @@ nav.navbar {
 @media (max-width: 1400px) {
   .core-feature .feature-box p {
     font-size: calc(14px + 2 * (100vw - 320px) / 1600);
+  }
+  .clock {
+    position: absolute;
+    top: 48.3%;
+    left: 41.9%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/clock.png);
+    background-size: cover;
   }
 }
 @media (max-width: 767px) {
