@@ -125,41 +125,73 @@ ul {
           margin-inline-start: 0;
 }
 
-#btn-invest {
-  background-color: rgba(var(--theme-color-red), 1);
-  font-size: calc(18px + 4 * (100vw - 320px) / 1600);
+.btn-solid {
+  background-color: rgba(var(--theme-color-red), 1) !important;
+  font-size: calc(20px + 4 * (100vw - 320px) / 1600) !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: calc(8px + 6 * (100vw - 320px) / 1600);
-  color: rgba(var(--black), 1);
-  padding: calc(25px + 3 * (100vw - 320px) / 1600) calc(40px + 6 * (100vw - 320px) / 1600);
+  color: rgba(var(--dark-title), 1);
+  padding: calc(24px + 3 * (100vw - 320px) / 1600) calc(46px + 6 * (100vw - 320px) / 1600) !important;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  border: 1px solid rgba(var(--theme-color-red), 1);
+  border: 1px solid rgba(var(--theme-color-red), 1) !important;
   border-radius: 8px;
-  font-weight: 600;
-  margin: auto;
-  margin-top: 50px;
+  font-weight: 500;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#btn-invest .iconsax svg [fill] {
+.btn-solid .iconsax svg [fill] {
   fill: rgba(var(--dark-title), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-#btn-invest:hover {
-  background-color: transparent;
-  color: rgba(var(--theme-color-red), 1);
-  border: 1px solid rgba(var(--theme-color-red), 1);
+.btn-solid:hover {
+  background-color: transparent !important;
+  color: rgba(var(--theme-color-red), 1) !important;
 }
-#btn-invest:hover .iconsax svg [fill] {
+.btn-solid:hover .iconsax svg [fill] {
   fill: rgba(var(--theme-color-red), 1);
+}
+
+.btn-solid-message {
+  background-color: rgba(var(--theme-color), 1);
+  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: calc(8px + 6 * (100vw - 320px) / 1600);
+  color: rgba(var(--dark-title), 1);
+  padding: calc(8px + 3 * (100vw - 320px) / 1600) calc(20px + 6 * (100vw - 320px) / 1600);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid rgba(var(--theme-color), 1);
+  border-radius: 8px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0 auto;
+}
+.btn-solid-message .iconsax svg [fill] {
+  fill: rgba(var(--dark-title), 1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.btn-solid-message:hover {
+  background-color: transparent;
+  color: rgba(var(--theme-color), 1) !important;
+}
+.btn-solid-message:hover .iconsax svg [fill] {
+  fill: rgba(var(--theme-color), 1) !important;
 }
 
 /*=====================
@@ -813,7 +845,10 @@ nav.navbar {
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   margin-bottom: 0;
 }
-.home-section .home-sec .home-content .btn-invest {
+.home-section .home-sec .home-content .btn-solid {
+  margin-top: calc(35px + 20 * (100vw - 320px) / 1600);
+}
+.home-section .home-sec .home-content .btn-solid-message {
   margin-top: calc(35px + 20 * (100vw - 320px) / 1600);
 }
 .home-section .home-sec .home-img {
@@ -1340,7 +1375,10 @@ footer .footer-content h2 {
   color: rgba(var(--white), 1);
   margin: 14px auto 18px;
 }
-footer .footer-content .btn-invest {
+footer .footer-content .btn-solid {
+  margin: 0 auto;
+}
+footer .footer-content .btn-solid-messag {
   margin: 0 auto;
 }
 
