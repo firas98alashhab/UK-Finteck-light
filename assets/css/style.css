@@ -170,7 +170,7 @@ body {
 body:after {
   content: "";
   position: absolute;
-  background-image: url(../images/about-bg.png);
+  background-color: #fff;
   left: 0;
   top: 0;
   width: 100%;
@@ -181,7 +181,7 @@ body:after {
   background-size: cover;
 }
 body.inner-bg:after {
-  background-image: url(../images/inner-bg.png);
+  background-color: #fff;
 }
 
 h1 {
