@@ -147,7 +147,7 @@ ul {
   transition: all 0.5s ease;
 }
 .btn-solid .iconsax svg [fill] {
-  fill: rgba(var(--dark-title), 1);
+  fill: rgba(var(--white), 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }

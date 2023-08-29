@@ -4979,6 +4979,14 @@ header .offcanvas-backdrop {
     overflow: hidden;
   }
 }
+
+.home-content .dr-img {
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 100px;
+  border-radius: 15px;
+  box-shadow: 20px 25px 65px rgba(0, 0, 0, 0.82);
+}
 .home-section .bg-effect .bg-gif {
   position: absolute;
   left: 50%;
@@ -5041,7 +5049,7 @@ header .offcanvas-backdrop {
 }
 .home-section .home-content h1 .title-effect {
   padding: 3px 20px;
-  background-color: #34489d;
+  background-color: rgba(var(--theme-color-red), 1);
   display: inline-block;
   position: relative;
   margin: 0 15px;
@@ -5071,7 +5079,7 @@ header .offcanvas-backdrop {
   }
 }
 .home-section .home-content h1 .title-effect span {
-  background: url("../images/title-bg3.jpg");
+  background: url("../images/title-bg4.jpg");
   background-position: bottom;
   -webkit-background-clip: text;
   color: transparent;
@@ -5367,7 +5375,7 @@ header .offcanvas-backdrop {
 
 .service-section {
   padding-top: 178px;
-  background: linear-gradient(180.02deg, rgba(var(--theme-color-red), 0.5) 0.02%, rgba(var(--theme-color-red), 0) 90.86%);
+  background: transparent ;
   position: relative;
   overflow: hidden;
 }
