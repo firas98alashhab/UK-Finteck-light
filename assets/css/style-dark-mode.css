@@ -164,8 +164,7 @@ html {
 body {
   position: relative;
   font-family: "Outfit", sans-serif;
-  /* background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%); */
-  background: linear-gradient(0deg, #fff, #fff), linear-gradient(179.9deg, #ffffff -47.93%, #ffffff 98.07%);
+  background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
 }
 body:after {
   content: "";
@@ -229,7 +228,7 @@ a:not([href]):not([class]):hover {
 
 a {
   text-decoration: none;
-  color: rgba(var(--theme-color-red), 1);
+  color: rgba(var(--theme-color), 1);
 }
 a:hover {
   color: rgba(var(--theme-color), 1);
@@ -278,7 +277,7 @@ li {
     2.2 Breadcrumb Scss start
 ==========================*/
 .breadcrumb-section {
-  background-image: url("../images/info-bg1.jpg");
+  background-image: url("../images/breadcrumb-bg.png");
   background-position: bottom;
   background-size: cover;
   padding-top: 180px;
@@ -410,7 +409,7 @@ li {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   border: 1px solid;
-  border-image-source: linear-gradient(114.72deg,  rgba(255, 255, 255, 0.5) -16.82%, rgba(255, 255, 255, 0.5) 59.74%);
+  border-image-source: linear-gradient(114.72deg,  rgba(50, 73, 158, 0.5) -16.82%, rgba(10, 31, 73, 0.5) 59.74%);
 }
 .btn-theme:hover {
   background: rgba(var(--theme-color), 0.21);
@@ -1732,6 +1731,7 @@ header {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 header.sticky {
   position: fixed;
   left: 0;
@@ -2405,7 +2405,7 @@ header .navbar-light .navbar-brand:focus {
   color: rgba(var(--title-color), 1);
 }
 header .navbar-light .navbar-nav .nav-link {
-  color: rgba(var(--black), 0.7);
+  color: rgba(var(--white), 1);
 }
 header .navbar-light .navbar-nav .nav-link:hover {
   color: rgba(var(--theme-color), 1);
@@ -2731,8 +2731,9 @@ header .hot-deal-box span {
   }
   header .navbar-expand-xl .dropdown-menu {
     margin-top: 0;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.08)!important;
+    -webkit-box-shadow: -1px 0 10px 0 rgba(var(--title-color), 0.07), 5px 20px 40px 0 rgba(var(--title-color), 0.04);
+            box-shadow: -1px 0 10px 0 rgba(var(--title-color), 0.07), 5px 20px 40px 0 rgba(var(--title-color), 0.04);
+    background-color: #0b1828;
     border: 1px solid rgba(var(--theme-color), 0.1);
     padding: 20px;
     border-radius: 0;
@@ -2775,7 +2776,7 @@ header .hot-deal-box span {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 0;
-    color: rgba(var(--black), 0.8);
+    color: rgba(var(--title-color), 0.8);
   }
   header .navbar-expand-xl .dropdown-menu .dropdown-item:hover::after {
     width: 40%;
@@ -3300,7 +3301,7 @@ header .offcanvas-backdrop {
 }
 .blog-listing .blog-content .main-title {
   font-size: 28px;
-  color: rgba(var(--black), 1);
+  color: rgba(var(--white), 1);
   line-height: 1.2;
 }
 @media (max-width: 1300px) {
@@ -4822,7 +4823,8 @@ header .offcanvas-backdrop {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(var(--black), 0.15);
+  background: rgba(var(--title-color), 0.08);
+  border: 1px solid rgba(var(--title-color), 0.3);
   margin: 0 auto 15px;
 }
 .contact-section .contact-box h3 {
@@ -5027,7 +5029,7 @@ header .offcanvas-backdrop {
   }
 }
 .home-section .home-content h1 {
-  color: rgba(var(--theme-color), 1);
+  color: rgba(var(--white), 1);
 }
 @media (max-width: 991px) {
   .home-section .home-content h1 {
@@ -5041,7 +5043,7 @@ header .offcanvas-backdrop {
 }
 .home-section .home-content h1 .title-effect {
   padding: 3px 20px;
-  background-color: rgba(var(--theme-color-red), 1);
+  background-color: #34479d36;
   display: inline-block;
   position: relative;
   margin: 0 15px;
@@ -5071,7 +5073,7 @@ header .offcanvas-backdrop {
   }
 }
 .home-section .home-content h1 .title-effect span {
-  background: url("../images/title-bg4.jpg");
+  background: url("../images/title-bg1.jpg");
   background-position: bottom;
   -webkit-background-clip: text;
   color: transparent;
@@ -5363,11 +5365,9 @@ header .offcanvas-backdrop {
   }
 }
 
-
-
 .service-section {
   padding-top: 178px;
-  background: transparent;
+  background: linear-gradient(180.02deg, rgba(var(--theme-color), 0.05) 0.02%, rgba(var(--theme-color), 0) 90.86%);
   position: relative;
   overflow: hidden;
 }
@@ -5390,7 +5390,7 @@ header .offcanvas-backdrop {
 }
 .service-section .service-box {
   padding: 40px;
-  background: #1c2753;
+  background: #0a0e17;
   position: relative;
   border-radius: 4px;
   height: 100%;
@@ -5430,7 +5430,7 @@ header .offcanvas-backdrop {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(148deg, rgba(var(--theme-color), 0.35) -15.73%, rgba(var(--theme-color), 0) 98.72%);
+  background: linear-gradient(148deg, rgba(var(--theme-color), 0.15) -15.73%, rgba(var(--theme-color), 0) 98.72%);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
@@ -5491,7 +5491,6 @@ header .offcanvas-backdrop {
   gap: 10px;
 }
 .service-section .service-box .service-content p {
-  color: rgba(var(--white), 1);
   margin-bottom: 0;
 }
 .service-section .service-box:hover:after {
@@ -5785,7 +5784,7 @@ header .offcanvas-backdrop {
   z-index: -1;
 }
 .feature-section .feature-box {
-  background: #1c2753;
+  background-color: #0a0e17;
   padding: 34px;
   border-radius: 4px;
   position: relative;
@@ -6734,11 +6733,13 @@ header .offcanvas-backdrop {
     right: 120px;
   }
 }
+
 @media (max-width: 1293px) {
   .container-fluid {
     padding-top: 100px;
   }
 }
+
 .login-animation .img-face img {
   -webkit-animation: flip 3s linear infinite alternate;
           animation: flip 3s linear infinite alternate;
@@ -6880,13 +6881,12 @@ header .offcanvas-backdrop {
   }
 }
 
-
 @media (max-width: 1199px) {
   .order-1 .about-content{
     margin-left: 40px;
   }
   .container-fluid {
-    padding-top: 120px;
+    padding-top: 200px;
   }
 }
 
@@ -6923,6 +6923,9 @@ header .offcanvas-backdrop {
   }
   .navbar-menu-button {
     margin-top: 30px;
+  }
+  .container-fluid {
+    padding-top: 150px;
   }
 }
 
@@ -6985,6 +6988,9 @@ header .offcanvas-backdrop {
   }
   .info-section {
     margin-bottom: -520px;
+  }
+  .logo-img-3 {
+    width: 100px;
   }
 }
 
@@ -7132,7 +7138,6 @@ header .offcanvas-backdrop {
   .breadcrumb-content .img-fluid {
     display: none;
   }
-  
   .logo-img {
     width: 65px;
   }
@@ -7168,14 +7173,6 @@ header .offcanvas-backdrop {
   .breadcrumb-section h2{
     margin-left: 38px;
   }
-  .invest-us h2{
-    margin-left: 100px;
-  }
-  .breadcrumb-content .contact-uss {
-    left: 50%;
-    right: 50%;
-    padding-bottom: 20px;
-  }
   .breadcrumb-content h2 {
     margin: auto;
     margin-left: 15px;
@@ -7184,6 +7181,14 @@ header .offcanvas-backdrop {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .invest-us h2{
+    margin-left: 100px;
+  }
+  .breadcrumb-content .contact-uss {
+    left: 50%;
+    right: 50%;
+    padding-bottom: 20px;
   }
   .breadcrumb-content .img-fluid {
     display: none;
@@ -7394,20 +7399,37 @@ header .offcanvas-backdrop {
   transition-delay: 0.3s;
 }
 
-.bg-size .bg-img {
-  background-color: green;
-  border: 5px solid #000000 !important;
+.btn-solid-invest {
+  background-color: rgba(var(--theme-color), 1);
+  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: calc(8px + 6 * (100vw - 320px) / 1600);
+  color: rgba(var(--white), 1);
+  padding: calc(8px + 3 * (100vw - 320px) / 1600) calc(20px + 6 * (100vw - 320px) / 1600);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid rgba(var(--theme-color), 1);
+  border-radius: 8px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  
 }
-
-
-.paragraphEdit {
-  color: black;
+.btn-solid-invest .iconsax svg [fill] {
+  fill: rgba(var(--dark-title), 1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-
-.red-color-text {
-  color: black;
+.btn-solid-invest:hover {
+  background-color: transparent;
+  color: rgba(var(--theme-color), 1) !important;
 }
-
-.blue-color-text {
-  color: rgba(var(--theme-color), 1);
+.btn-solid-invest:hover .iconsax svg [fill] {
+  fill: rgba(var(--theme-color), 1) !important;
 }

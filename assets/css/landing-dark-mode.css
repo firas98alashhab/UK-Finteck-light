@@ -159,8 +159,6 @@ ul {
   fill: rgba(var(--theme-color-red), 1);
 }
 
-
-
 .btn-solid-message {
   background-color: rgba(var(--theme-color), 1);
   font-size: calc(16px + 4 * (100vw - 320px) / 1600);
@@ -193,43 +191,6 @@ ul {
   color: rgba(var(--theme-color), 1) !important;
 }
 .btn-solid-message:hover .iconsax svg [fill] {
-  fill: rgba(var(--theme-color), 1) !important;
-}
-
-/* invest button */
-
-.btn-solid-invest {
-  background-color: rgba(var(--theme-color), 1);
-  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: calc(8px + 6 * (100vw - 320px) / 1600);
-  color: rgba(var(--white), 1);
-  padding: calc(8px + 3 * (100vw - 320px) / 1600) calc(20px + 6 * (100vw - 320px) / 1600);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  border: 1px solid rgba(var(--theme-color), 1);
-  border-radius: 8px;
-  font-weight: 500;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  
-}
-.btn-solid-invest .iconsax svg [fill] {
-  fill: rgba(var(--dark-title), 1);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.btn-solid-invest:hover {
-  background-color: transparent;
-  color: rgba(var(--theme-color), 1) !important;
-}
-.btn-solid-invest:hover .iconsax svg [fill] {
   fill: rgba(var(--theme-color), 1) !important;
 }
 
@@ -561,7 +522,6 @@ nav.navbar {
   padding: 10px 0;
   position: absolute;
 }
-
 @media (max-width: 1700px) {
   .home-section .home-sec .home-effect li {
     font-size: 18px;
@@ -874,10 +834,10 @@ nav.navbar {
   right: 0;
 }
 .home-section .home-sec .home-content h1 {
+  color: rgba(var(--white), 1);
   font-family: "Play", sans-serif;
   font-size: calc(28px + 26 * (100vw - 320px) / 1600);
   line-height: 1.2;
-  color: rgba(var(--theme-color-red), 1);
 }
 .home-section .home-sec .home-content p {
   color: rgba(var(--content-color), 1);
@@ -1417,7 +1377,8 @@ footer .footer-content h2 {
 footer .footer-content .btn-solid {
   margin: 0 auto;
 }
-footer .footer-content .btn-solid-messag {
+
+footer .footer-content .btn-solid-message {
   margin: 0 auto;
 }
 
