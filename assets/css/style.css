@@ -4835,7 +4835,7 @@ header .offcanvas-backdrop {
   line-height: 1.3;
 }
 .contact-section .contact-details {
-  background: rgba(var(--title-color), 0.06);
+  background-color: rgb(215, 215, 215);
   border: 1px solid rgba(var(--title-color), 0.3);
   padding: 50px;
   margin-top: 38px;
@@ -7411,3 +7411,47 @@ header .offcanvas-backdrop {
 .blue-color-text {
   color: rgba(var(--theme-color), 1);
 }
+
+#name-contact .form-label {
+  color: black;
+}
+
+#name-contact .form-control {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#email-contact .form-label {
+  color: black;
+}
+
+#email-contact .form-control {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#number-contact .form-label {
+  color: black;
+}
+
+#number-contact .form-control {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#message-contact .form-label {
+  color: black;
+}
+
+#message-contact .form-control {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+#btn-contact .btn-solid-message {
+  color: rgb(255, 255, 255);
+}
+
+
+
+
