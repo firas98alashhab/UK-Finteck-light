@@ -5697,6 +5697,12 @@ header .offcanvas-backdrop {
     width: 80px !important;
     margin: -20px 0 -80px 15px !important;
   }
+
+  #mode-toggle {
+    position: absolute;
+    left: 6%;
+    top: 1%;
+  }
 }
 @media (max-width: 376px) {
   .last-box {
@@ -6922,6 +6928,9 @@ header .offcanvas-backdrop {
     overflow: hidden;
   }
   .navbar-menu-button {
+    margin-top: 30px;
+  }
+  #mode-toggle{
     margin-top: 30px;
   }
 }
